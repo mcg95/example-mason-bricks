@@ -1,0 +1,13 @@
+name: login
+description: Generates a login feature with email/password fields and MVVM architecture.
+version: 1.0.0
+
+environment:
+  mason: ">=0.1.0 <1.0.0"
+
+vars:
+  include_repository:
+    type: boolean
+    description: Generate auth repository layer
+    default: true
+    prompt: Include auth repository?

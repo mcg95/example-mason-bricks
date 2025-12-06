@@ -1,0 +1,18 @@
+class AuthRepository {
+  AuthRepository();
+
+  Future<void> register(String email, String password) async {
+    // TODO: Implement actual registration logic
+    // Example:
+    // final response = await apiClient.post('/auth/register', {
+    //   'email': email,
+    //   'password': password,
+    // });
+    // return response;
+    await Future.delayed(const Duration(seconds: 1));
+  }
+
+  Future<void> logout() async {
+    // TODO: Implement logout logic
+  }
+}
