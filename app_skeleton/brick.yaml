@@ -1,0 +1,32 @@
+name: app_skeleton
+description: Generates a complete Flutter app structure with core architecture.
+version: 1.0.0
+
+environment:
+  mason: ">=0.1.0 <1.0.0"
+
+vars:
+  app_name:
+    type: string
+    description: Application name
+    default: my_app
+    prompt: Application name?
+
+  org_name:
+    type: string
+    description: Organisation identifier
+    default: com.example
+    prompt: Organisation name?
+
+  dependencies:
+    type: array
+    description: Dependencies to include
+    default:
+      - provider
+    values:
+      - provider
+      - go_router
+      - dio
+      - shared_preferences
+      - flutter_secure_storage
+    prompt: Select dependencies
