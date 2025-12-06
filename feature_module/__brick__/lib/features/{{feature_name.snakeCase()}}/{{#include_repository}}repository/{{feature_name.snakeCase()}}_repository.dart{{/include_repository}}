@@ -1,0 +1,7 @@
+class {{feature_name.pascalCase()}}Repository {
+  {{feature_name.pascalCase()}}Repository();
+
+  // Add repository methods here
+  // Example:
+  // Future<List<Model>> fetchData() async { ... }
+}

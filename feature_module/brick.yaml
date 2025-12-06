@@ -1,0 +1,19 @@
+name: feature_module
+description: Generates a feature module with screen, view model, and optional repository.
+version: 1.0.0
+
+environment:
+  mason: ">=0.1.0 <1.0.0"
+
+vars:
+  feature_name:
+    type: string
+    description: Feature name in snake_case
+    default: dashboard
+    prompt: Feature name (snake_case)?
+
+  include_repository:
+    type: boolean
+    description: Generate repository layer
+    default: true
+    prompt: Include repository?
